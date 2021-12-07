@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Tạo form đơn giản - Part 1/2</title>
+    <style>
+        .myHeaders {
+            color:blue;
+        }
+        .myTittle {
+            text-align: center;
+            background-color:orange;
+            color:white
+        }
+        .myCheckboxItems{
+            color:orange;
+        }
+    </style>
+</head>
+<body>
+<form action="">
+<table>
+    <tr>
+        <td colspan="5" class = myTittle>SỞ THÍCH CỦA BẠN</td>
+    </tr>
+
+    <tr>
+        <td class="myHeaders">Họ và tên</td>
+        <td colspan="2"><input name="fullname" type="text"></td>
+    </tr>
+
+    <tr>
+        <td class="myHeaders">Email</td>
+        <td colspan="2"><input name="email" type="text"></td>
+    </tr>
+
+    <tr>
+        <td class="myHeaders">Sở thích</td>
+        <td><input type="checkbox" name="sothich-thethao" id="sothich-thethao">
+            <label for="sothich-thethao" class="myCheckboxItems">Thể thao</label>
+        </td>
+        <td><input type="checkbox" name="sothich-amnhac"  id="sothich-amnhac">
+            <label for="sothich-amnhac" class="myCheckboxItems">Âm nhạc</label>
+        </td>
+        <td><input type="checkbox" name="sothich-docsach"  id="sothich-docsach">
+            <label for="sothich-docsach" class="myCheckboxItems">Đọc sách</label>
+        </td>
+
+    </tr>
+
+    <tr>
+        <td></td>
+        <td><input type="checkbox" name="sothich-luotweb"  id="sothich-luotweb">
+            <label for="sothich-luotweb" class="myCheckboxItems">Lướt web</label>
+        </td>
+        <td><input type="checkbox" name="sothich-choigame"  id="sothich-choigame">
+            <label for="sothich-choigame" class="myCheckboxItems">Chơi game</label>
+        </td>
+        <td><input type="checkbox" name="sothich-dienanh"  id="sothich-dienanh">
+            <label for="sothich-dienanh" class="myCheckboxItems">Điện ảnh</label>
+        </td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td><input type="checkbox" name="sothich-dulich"  id="sothich-dulich">
+            <label for="sothich-dulich" class="myCheckboxItems">Du lịch</label>
+        </td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td><input type="submit" value="Gửi thông tin"></td>
+        <td><input type="reset" value="Nhập lại"></td>
+    </tr>
+</table>
+
+</form>
+</body>
+</html>
